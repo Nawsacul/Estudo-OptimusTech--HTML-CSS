@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+:root {
+    --text-color-black: #3A404E;
+    --text-color-red: #8E2424;
+    --gray500: #667085;
+    --gray900: #101828;
+    background: #FFFFFF;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Header*/
+
+header {
+    width: auto;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    height: 44px;
+    padding: 18px 80px;
+    align-items: center;
+}
+
+.logo1 {
+    padding: 1.5px 0px;
+    font-weight: bold;
+}
+
+.logo1 span {
+    vertical-align: super;
+    font-size: 18px;
+    color: var(--text-color-black);
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+    color: var(--gray500);
+}
+
+.botoes {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    font-size: 16px;
+    border-radius: 8px; 
+    padding: 10px 18px;
+}
+
+div button:first-child {
+    background: white;
+    border: 1px solid white;
+    color: var(--gray500);
+}
+
+.cadastrar {
+    background: var(--text-color-red);
+    border: 1px solid var(--text-color-red);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    color: white;
+    height: 44px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*Primeira secção da main (Cabeçalho)*/
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 24px;
+    text-align: center;
+}
+
+.cabecalho span, .cabecalho h1 {
+    font-weight: 600;
+}
+
+.cabecalho .subtitulo {
+    color: var(--text-color-red);
+}
+
+.cabecalho .titulo {
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    font-weight: bold;
+}
+
+.cabecalho .subtexto {
+    padding: 12px 0px 0px;
+    width: 792px;
+}
+
+.cabecalho .subtexto p {
+    color: var(--gray500);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/*Segunda secção da main (Métricas)*/
+
+.metricas-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 112px 96px;
+}
+
+.start {
+    padding: 0px 0px 0px 32px;
+}
+
+.start p {
+    padding-bottom: 24px;
+}
+
+.metricas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 280px;
+}
+
+.metricas h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: var(--text-color-red);
+    padding: 0px 0px 4px;
+}
+
+.metricas h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray900);
+    font-weight: bold;
+}
+
+.metricas p {
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--gray500);
+}
+
+.end {
+    padding: 0px 32px 0px 0px;
+}
+
+/*Terceira secção da main (Talentos)*/
+
+.vagas {
+    padding: 96px 80px;
+}
+
+.talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+    gap: 20px;
+    text-align: center;
+}
+
+.talentos .subtitulo {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color-red);
+    padding: 4px 12px;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+}
+
+.talentos .titulo {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--gray900);
+    letter-spacing: -0.02em;
+    font-weight: bold;
+}
+
+.talentos .subtexto {
+    width: 768px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gray500);
+}
+
+.talentos img {
+    padding: 44px 32px 0px;
+}
+
+/*Terceira secção da main (Vagas abertas)*/
+.vagas-abertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+h5, .titulo-vaga {
+    color: var(--gray900);
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 20px;
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+
+.des-soft {
+    margin-top: 24px;
+}
+
+.vaga {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 768px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+}
+
+.titulo-vaga {
+    padding: 24px 24px 0px;
+    font-size: 18px;
+}
+
+.informacoes {
+    padding: 32px 24px 28px;
+    font-size: 16px;
+    color: var(--gray500);
+}
+
+/*Quarta secção da main*/
+
+.sec-depo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 112px 0px;
+    margin-bottom: 64px;
+    text-align: center;
+    gap: 16px;
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    width: 1216px;
+    height: 340.02px;
+}
+
+.depoimentos .subtitulo {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-color-red);
+}
+
+.depoimentos .titulo {
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--gray900);
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+
+.depoimentos .desenvolvedora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos .desenvolvedora span {
+    padding: 16px 0px 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.desenvolvedora p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray500);
+}
+
+/*Quarta secção da main*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 304px 32px;
+    gap: 20px;
+    text-align: center;
+    background: #F9FAFB;
+
+}
+
+.formulario span:first-child {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    color: var(--gray900);
+    font-weight: bold;
+}
+
+.formulario span:nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gray500);
+}
+
+.formulario form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 24px;
+}
+
+.formulario .cadastrar {
+    height: 50px;
+}
+
+#teste {
+    width: 360px;
+    height: 48px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+/*Footer*/
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #98A2B3;
+    padding-bottom: 96px;
+    background: #F9FAFB;
+
+}
